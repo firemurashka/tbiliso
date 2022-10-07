@@ -2032,18 +2032,24 @@ textarea.input {
   padding: 25px 0;
 }
 .group__list {
-  gap: 0.625rem;
+  gap: 1.25rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-@media (max-width: 61.99875em) {
+@media (max-width: 1270px) {
   .group__list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 61.99875em) {
   .group__list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 47.99875em) {
+  .group__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
   }
 }
 @media (max-width: 29.99875em) {
@@ -2057,34 +2063,51 @@ textarea.input {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  /* @media (max-width: 1150px) {
-  	max-width: 238px;
-  }
-
-  @media (max-width:$mobile) {
-  	max-width: 200px;
-  }
-
-  @media (max-width:$mobileSmall) {
-  	max-width: 140px;
-  } */
+  transition: all 0.3s ease 0s;
+}
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.product:active {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .product__image {
   border-radius: 16px 16px 0 0;
   overflow: hidden;
   margin: 0px 0px 10px 0px;
+  display: block;
+  object-fit: cover;
+  transition: all 0.3s ease 0s;
+  height: 272px;
 }
 .product__image img {
   width: 100%;
 }
+@media (max-width: 61.99875em) {
+  .product__image {
+    height: 250px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .product__image {
+    height: 220px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .product__image {
+    height: 150px;
+  }
+}
 .product__content {
   display: grid;
-  grid-template-rows: 63px 80px 40px;
+  grid-template-rows: 63px 96px 40px;
   justify-items: center;
 }
 @media (max-width: 61.99875em) {
   .product__content {
-    grid-template-rows: 48px 73px 40px;
+    grid-template-rows: 48px 82px 40px;
   }
 }
 @media (max-width: 47.99875em) {
@@ -2101,6 +2124,7 @@ textarea.input {
   text-align: center;
   line-height: 116.6666666667%;
   max-width: 250px;
+  padding: 0 2px;
 }
 @media (min-width: 90em) {
   .product__title {
@@ -2202,18 +2226,18 @@ textarea.input {
   display: flex;
   flex-direction: column;
   /* 
-  	@media (max-width: 1150px) {
-  		max-width: 238px;
-  	}
+  @media (max-width: 1150px) {
+  	max-width: 238px;
+  }
 
-  	@media (max-width:$mobile) {
-  		max-width: 200px;
-  	}
+  @media (max-width:$mobile) {
+  	max-width: 200px;
+  }
 
-  	@media (max-width:$mobileSmall) {
-  		max-width: 140px;
-  	}
-   */
+  @media (max-width:$mobileSmall) {
+  	max-width: 140px;
+  }
+  */
 }
 .goods__image {
   border-radius: 16px 16px 0 0;
