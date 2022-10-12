@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221007204000">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221012094138">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- 	&display=swap -->
 	<!-- 	&subset=cyrillic-ext -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap&subset=cyrillic-ext&_v=20221007204000" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap&subset=cyrillic-ext&_v=20221007204000" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap&subset=cyrillic-ext&_v=20221012094138" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap&subset=cyrillic-ext&_v=20221012094138" rel="stylesheet" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -80,7 +80,7 @@
 
 
 			<!-- главная секция -->
-			<section class="menu-main-header main-header">
+			<section class="contacts-main-header main-header">
 				<div class="main-header__container">
 					<div class="main-header__content">
 						<div class="main-header__title">Галерея</div>
@@ -93,9 +93,84 @@
 				</div>
 			</section>
 
+			<!-- main-sliderслайдер -->
+			<section class="gallery-slider  slider">
+				<div class="slider__block">
+					<!--главный контейнер слайдера-->
+					<div class="slider__body slider__body_gallery">
+						<div class="slider__swiper">
+							<!--слайд 1-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery01.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery01.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 2-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery02.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery02.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 3-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery03.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery03.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 4-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery04.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery04.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 5-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery05.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery05.jpg" alt=""></picture>
+								</div>
+							</div>
 
-
-
+							<!--слайд 2-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery06.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery06.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 3-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery07.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery07.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 4-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery08.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery08.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 5-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery09.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery09.jpg" alt=""></picture>
+								</div>
+							</div>
+							<!--слайд 1-->
+							<div class="slider__slide">
+								<div class="slider__item -ibg">
+									<picture><source srcset="img/gallery/gallery10.webp" type="image/webp"><img class="slider__img" src="img/gallery/gallery10.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Добавляем если нам нужны стрелки управления-->
+					<div class="slider__arrows slider-arrows">
+						<button type="button" class="slider-arrow slider-arrow_prev _icon-arrow"></button>
+						<button type="button" class="slider-arrow slider-arrow_next _icon-arrow"></button>
+					</div>
+				</div>
+				<!-- пагинация - точки -->
+				<div class="gallery-slider__pagination"></div>
+			</section>
 
 
 
@@ -136,7 +211,7 @@
 					</div>
 
 					<div class="footer__column footer__column_03">
-						<ul class="footer__list">
+						<ul class="footer__list footer__list_03">
 							<li class="footer__item"><a href="" class="footer__link _icon-phone">+7 (965) 040-18-56</a></li>
 							<li class="footer__item"><a href="" class="footer__link  _icon-whatsapp">whatsapp</a></li>
 							<li class="footer__item"><a href="" class="footer__link  _icon-telegram">telegram</a></li>
@@ -148,25 +223,32 @@
 
 					<div class="footer__column footer__column_04">
 						<ul class="footer__list">
-							<li class="footer__item"><a href="" class="footer__link _icon-map">г. Санкт-Петербург, ул.
-									Железнодорожная
-									56</a></li>
+							<li class="footer__item">
+								<a href="" class="footer__link footer__link_map _icon-map">
+									г. Санкт-Петербург, ул. Железнодорожная 56
+								</a>
+							</li>
+
 							<li class="footer__item">
 
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d355.4832301797731!2d30.420531379404622!3d59.734206311885025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469621f7e1c142b5%3A0xc77ea6c578f72a64!2zItCi0LHQuNC70LjRgdC-IiDQs9GA0YPQt9C40L3RgdC60LDRjyDQutGD0YXQvdGP!5e0!3m2!1sru!2sru!4v1664900511269!5m2!1sru!2sru" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<div data-da=".footer__block-map,767.98" class="footer__map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d355.4832301797731!2d30.420531379404622!3d59.734206311885025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469621f7e1c142b5%3A0xc77ea6c578f72a64!2zItCi0LHQuNC70LjRgdC-IiDQs9GA0YPQt9C40L3RgdC60LDRjyDQutGD0YXQvdGP!5e0!3m2!1sru!2sru!4v1664900511269!5m2!1sru!2sru" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="footer__block-map">
+
 				</div>
 
 
 			</div>
 
+
 			<a href="#" id="toTop" class="arrow-up _icon-arrow"></a>
 
 		</footer>
-
-
 	</div>
 	<!-- 
 <div id="popup" aria-hidden="true" class="popup">
@@ -180,7 +262,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20221007204000"></script>
+	<script src="js/app.min.js?_v=20221012094138"></script>
 </body>
 
 </html>
